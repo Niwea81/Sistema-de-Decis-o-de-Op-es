@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistema de Decisão de Opções</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>📊 Sistema de Decisão de Opções</h1>
+
+    <label>Ativo</label>
+    <input id="ativo" placeholder="Ex: XSP, SPY" />
+
+    <label>Perfil</label>
+    <select id="perfil">
+      <option value="">Selecione</option>
+      <option value="conservador">Conservador</option>
+      <option value="moderado">Moderado</option>
+    </select>
+
+    <label>IV (Volatilidade Implícita)</label>
+    <select id="iv">
+      <option value="">Selecione</option>
+      <option value="baixa">Baixa</option>
+      <option value="media">Média</option>
+      <option value="alta">Alta</option>
+    </select>
+
+    <button onclick="executar()">Analisar</button>
+
+    <pre id="resultado"></pre>
+  </div>
+
+  <script src="js/input.js"></script>
+  <script src="js/context.js"></script>
+  <script src="js/decision.js"></script>
+  <script src="js/moneyness.js"></script>
+  <script src="js/engine.js"></script>
+
+</body>
+</html>
 
